@@ -1,0 +1,128 @@
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+html {
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgb(255, 255, 255);
+	background-image: radial-gradient(
+			at 18% 100%,
+			hsla(240, 81%, 86%, 1) 0px,
+			transparent 50%
+		),
+		radial-gradient(at 20% 31%, hsla(22, 33%, 92%, 1) 0px, transparent 50%),
+		radial-gradient(at 0% 50%, hsla(355, 30%, 86%, 1) 0px, transparent 50%),
+		radial-gradient(at 83% 26%, hsla(340, 60%, 84%, 1) 0px, transparent 50%),
+		radial-gradient(at 0% 100%, hsla(240, 81%, 83%, 1) 0px, transparent 50%),
+		radial-gradient(at 88% 96%, rgb(140, 140, 217) 0px, transparent 50%),
+		radial-gradient(at 10% 3%, rgb(255, 133, 167) 0px, transparent 50%);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	margin: 0px;
+	min-height: 100%;
+	width: 100%;
+}
+main {
+	margin: 8vh;
+	padding: 5vh;
+	padding-top: 2vh;
+	margin-bottom: 2vh;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0.7px 1px 0.7px -11px rgba(0, 0, 0, 0.022),
+		1.6px 2.3px 1.5px -11px rgba(0, 0, 0, 0.035),
+		2.7px 4px 2.6px -11px rgba(0, 0, 0, 0.044),
+		4.1px 6.2px 4.1px -11px rgba(0, 0, 0, 0.053),
+		6.1px 9.1px 6px -11px rgba(0, 0, 0, 0.061),
+		8.9px 13.4px 8.6px -11px rgba(0, 0, 0, 0.068),
+		13.4px 20.1px 12.4px -11px rgba(0, 0, 0, 0.075),
+		21.3px 32px 18.5px -11px rgba(0, 0, 0, 0.081),
+		40px 60px 36px -11px rgba(0, 0, 0, 0.09);
+}
+h1 {
+	text-align: center;
+	padding: none;
+	margin: none;
+	color: rgb(255, 133, 167);
+}
+span {
+	color: rgb(104, 104, 233);
+}
+table {
+	border-spacing: 5px;
+	pointer-events: none;
+}
+td {
+	background-color: lightgray;
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	margin: 20px;
+	pointer-events: all;
+	border: 2px solid lightgrey;
+}
+/* From uiverse.io by @alexroumi */
+button {
+	margin: 5px;
+	padding: 15px 25px;
+	border: unset;
+	border-radius: 15px;
+	color: #212121;
+	z-index: 1;
+	background: #e8e8e8;
+	position: relative;
+	font-weight: 1000;
+	font-size: 17px;
+	-webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+	box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+	transition: all 250ms;
+	overflow: hidden;
+}
+
+button::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0;
+	border-radius: 15px;
+	background-color: #212121;
+	z-index: -1;
+	-webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+	box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+	transition: all 250ms;
+}
+
+button:hover {
+	color: #e8e8e8;
+}
+
+button:hover::before {
+	width: 100%;
+}
+.red {
+	background-color: rgb(204, 58, 58);
+}
+.blue {
+	background-color: rgb(53, 53, 211);
+}
+#full {
+	pointer-events: none;
+}
+#hidden {
+	display: none;
+}
+#controls {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+/* rgb(204, 58, 58); */
