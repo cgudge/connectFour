@@ -52,6 +52,9 @@ h1 {
 	margin: none;
 	color: rgb(255, 133, 167);
 }
+h2 {
+	text-align: center;
+}
 span {
 	color: rgb(104, 104, 233);
 }
@@ -114,6 +117,9 @@ button:hover::before {
 .blue {
 	background-color: rgb(53, 53, 211);
 }
+#nameSpace {
+	justify-content: center;
+}
 #full {
 	pointer-events: none;
 }
@@ -124,5 +130,21 @@ button:hover::before {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+}
+#startGame,
+#reset {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+#h2playerOne {
+	color: rgb(204, 58, 58);
+}
+#h2playerTwo {
+	color: rgb(53, 53, 211);
+}
+
+input:focus {
+	outline: none;
 }
 /* rgb(204, 58, 58); */

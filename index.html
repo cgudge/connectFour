@@ -13,29 +13,41 @@
 		/>
 		<link
 			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+		<link
+			rel="stylesheet"
 			type="text/css"
 			href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
 		/>
 		<title>Connect Four!</title>
 	</head>
 	<body>
-		<main>
+		<main class="animate__animated animate__fadeInDown">
+			<div id="input">
+				<input type="text" id="playerOne" placeholder="Player One" />
+				<input type="text" id="playerTwo" placeholder="Player Two" />
+			</div>
 			<div>
 				<h1>
 					Connect
 					<span>Four</span>
 				</h1>
-				<div><button id="hidden"></button></div>
 			</div>
+			<div id="startGame">
+				<span id="startButtons">
+					<button id="pvp">Play VS</button>
+					<button id="cpu">Play CPU</button>
+				</span>
+			</div>
+			<div id="nameSpace"></div>
 			<div id="gameSpace">
 				<table id="connectFour"></table>
 			</div>
+			<div id="reset">
+				<button id="resetButton">&#128257;</button>
+			</div>
 		</main>
-		<div>
-			<button id="1v1">&#128101;</button>
-			<button id="cpu">&#128187;</button>
-		</div>
-		<div id="reset"><button>&#128259;</button></div>
 	</body>
 	<script type="text/javascript" src="index.js"></script>
 	<script
