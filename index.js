@@ -124,6 +124,7 @@ function dropPiece(e, isComputer) {
 				reset();
 			}, // Callback after click
 		}).showToast();
+		return;
 	}
 	if (!isComputer && isCPUGame) {
 		canSomeoneWinNext();
